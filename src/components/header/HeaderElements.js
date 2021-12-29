@@ -1,17 +1,16 @@
 import { Link } from "react-router-dom";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { FiMenu } from 'react-icons/fi'
-import { MdOutlineClose } from 'react-icons/md'
 
 export const Navbar = styled.nav`
     height: 75px;
-    background: transparent;
+    background: ${({ isDark }) => (isDark ? "#27272a" : "transparent")};
     color: #fff;
     font-size: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position:${({ isDark }) => (isDark ? "" : "absolute")} ;
     width: 100%;
     z-index: 99;
 `;

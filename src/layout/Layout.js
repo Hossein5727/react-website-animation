@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import DropDown from '../components/dropDown/DropDown'
 import Header from '../components/header/Header'
 
-function Layout({ children }) {
+function Layout({ children, isDark }) {
 
     const [isOpen, setIsOpen] = useState(false)
 
@@ -16,7 +16,7 @@ function Layout({ children }) {
                 isOpen={isOpen}
                 toggle={toggle}
             />
-            <Header toggle={toggle} />
+            <Header toggle={toggle} isDark={isDark} />
             {children}
         </div>
     )

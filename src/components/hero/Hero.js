@@ -37,7 +37,6 @@ function Hero() {
     }
 
     useEffect(() => {
-        console.log(current);
         const next = () => {
             if (current < slideLength) {
                 setCurrent(current + 1)
@@ -58,9 +57,9 @@ function Hero() {
         <Section>
             <HeroWrapper>
                 {HeroElemetsData.map(item => (
-                    <div>
+                    <div key={item.id}>
                         {item.id == current && (
-                            <HeroSlides ref={slideRef} key={item.id} className='animate__animated animate__fadeIn'>
+                            <HeroSlides ref={slideRef}  className='animate__animated animate__fadeIn'>
                                 <HeroImage src={item.img} />
                                 <HeroContent className='animate__animated animate__fadeInLeftBig animate__delay-1s lg:mr-64 mt-28  sm:m-0'>
                                     <h1>{item.title}</h1>

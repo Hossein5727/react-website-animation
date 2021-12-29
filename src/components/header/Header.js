@@ -3,9 +3,9 @@ import { dataMenu } from '../../data/dataMenu'
 import { Button } from '../Button'
 import { Navbar, NavBars, NavItems, NavLogo, NavMenuLink } from './HeaderElements'
 
-function Header({ toggle }) {
+function Header({ toggle, isDark }) {
     return (
-        <Navbar>
+        <Navbar isDark={isDark} className={`${isDark && "shadow-xl"}`}>
             <NavLogo to="/">Hossein</NavLogo>
             <NavBars onClick={toggle} />
 

@@ -8,6 +8,6 @@
 }
 
 body {
-  /* overflow-x: hidden !important; */
+  overflow-x: hidden ;
   user-select: none;
 }
