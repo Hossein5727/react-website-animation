@@ -30,7 +30,6 @@ function InfoSection({
                 <img
                     src={image}
                     alt={title}
-                // width="100%"
                 />
             </InfoRightColumn>
 

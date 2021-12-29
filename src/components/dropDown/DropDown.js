@@ -9,7 +9,7 @@ function DropDown({ toggle, isOpen }) {
             <DropClose onClick={toggle} />
             <DropItems>
                 {dataMenu.map(item => (
-                    <DropLinkMenu to={item.link} key={item.id}>
+                    <DropLinkMenu onClick={toggle} to={item.link} key={item.id}>
                         {item.title}
                     </DropLinkMenu>
                 ))}
