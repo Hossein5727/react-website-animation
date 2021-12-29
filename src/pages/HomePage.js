@@ -8,7 +8,7 @@ function HomePage() {
         <div>
             <Hero />
             <InfoSection {...infoData1} />
-            <InfoSection {...infoData2} />
+            {/* <InfoSection {...infoData2} /> */}
         </div>
     )
 }
