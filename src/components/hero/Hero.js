@@ -59,9 +59,9 @@ function Hero() {
                 {HeroElemetsData.map(item => (
                     <div key={item.id}>
                         {item.id == current && (
-                            <HeroSlides ref={slideRef}  className='animate__animated animate__fadeIn'>
+                            <HeroSlides ref={slideRef} className='animate__animated animate__fadeIn'>
                                 <HeroImage src={item.img} />
-                                <HeroContent className='animate__animated animate__fadeInLeftBig animate__delay-1s lg:mr-64 mt-28  sm:m-0'>
+                                <HeroContent className='animate__animated animate__fadeInLeftBig animate__delay-1s  md:mr-72 mt-40'>
                                     <h1>{item.title}</h1>
                                     <p>{item.price}$</p>
                                     <Button primary to="/">View Home <FcNext className='ml-3' /></Button>
