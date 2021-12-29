@@ -11,9 +11,43 @@ export const AboutContainer = styled.section`
 
 export const AboutRectangle = styled.div`
   width: 100%;
-  height: 180px;
+  height: 120px;
+  position: absolute;
   background-color: #1e3a8a;
+  top: 0;
+  
+  @media screen and (max-width:768px) {
+      display: none;
+  }
+`;
 
+export const AboutRectangle2 = styled.div`
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  background-color: #1e3a8a;
+  bottom: 0;
+  left: 0;
+
+  @media screen and (max-width:768px) {
+      display: none;
+  }
+`;
+
+
+export const ColumnContainer = styled.div`
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 999;
+  width: 90%;
+
+  @media screen and (max-width:768px) {
+    left: 4%;
+  }
 `;
 
 export const AboutLeftColumn = styled.div`

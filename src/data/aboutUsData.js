@@ -7,6 +7,4 @@ export const aboutUsData = {
     buttonLabel: "View more",
     reverse: false,
     image: Image1,
-    animationLeft: "fade-up",
-    animationRight: "flip-up",
 }
