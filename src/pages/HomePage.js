@@ -5,10 +5,10 @@ import { infoData1, infoData2 } from '../data/infoData'
 
 function HomePage() {
     return (
-        <div>
+        <div className='overflow-hidden'>
             <Hero />
             <InfoSection {...infoData1} />
-            {/* <InfoSection {...infoData2} /> */}
+            <InfoSection {...infoData2} />
         </div>
     )
 }

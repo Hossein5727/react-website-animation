@@ -13,18 +13,40 @@ export const InfoContainer = styled.section`
 `;
 
 export const InfoLeftColumn = styled.div`
-  
-`;
-
-export const InfoRightColumn = styled.div`
   width: 50%;
   display: flex;
   justify-content: center;
-  align-items: flex - start;
+  align-items: flex-start;
   flex-direction: column;
 
-  @media screen and(max-width: 768px) {
-    width: 100% !important;
+  h1{
+    font-size: 35px;
+    margin-bottom: 50px;
+  };
+
+  p{
+    margin-bottom: 22px;
+    font-size: 20px;
+  };
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+`;
+
+export const InfoRightColumn = styled.div`
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
