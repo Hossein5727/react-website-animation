@@ -42,7 +42,7 @@ export const ColumnContainer = styled.div`
   position: absolute;
   top: 10%;
   left: 10%;
-  z-index: 999;
+  z-index: 1;
   width: 90%;
 
   @media screen and (max-width:768px) {
