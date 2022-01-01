@@ -12,6 +12,7 @@ export const FooterContainer = styled.footer`
   flex-wrap: wrap !important;
   position: relative;
   @media screen and (max-width:768px) {
+    /* margin-top: 200px; */
     justify-content: center;
     align-items: center;
   }

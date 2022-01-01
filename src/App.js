@@ -7,6 +7,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import AboutPage from './pages/AboutPage';
 import { useEffect, useState } from 'react';
+import ServicesPage from './pages/ServicesPage';
 AOS.init();
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
   const location = useLocation()
 
   useEffect(() => {
-    if (location.pathname == "/about") setIsDark(true)
+    if (location.pathname == "/about" || location.pathname == "/services") setIsDark(true)
     else { setIsDark(false) }
   }, [isDark, location])
 
@@ -25,6 +26,7 @@ function App() {
       <Routes location={location}>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/services" element={<ServicesPage />} />
       </Routes>
     </Layout>
   );

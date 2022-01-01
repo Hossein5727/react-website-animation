@@ -31,12 +31,12 @@ export const AboutRectangle2 = styled.div`
 
   @media screen and (max-width:768px) {
       display: none;
+      height: 0;
   }
 `;
 
 
 export const ColumnContainer = styled.div`
-  flex: 1;
   display: flex;
   flex-wrap: wrap;
   position: absolute;
@@ -46,7 +46,11 @@ export const ColumnContainer = styled.div`
   width: 90%;
 
   @media screen and (max-width:768px) {
-    left: 4%;
+    z-index: 0;
+    left: 5%;
+    bottom: 120%;
+    top: 0;
+    bottom: 30% !important;
   }
 `;
 
@@ -89,5 +93,11 @@ export const AboutRightColumn = styled.div`
     align-items: center;
     text-align: center;
     margin: auto;
+
+    img{
+      object-fit: cover;
+      height: 245px;
+      width: 350px;
+    }
   }
 `;
